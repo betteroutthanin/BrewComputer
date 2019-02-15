@@ -1,0 +1,51 @@
+{
+    "data":
+    {
+        "currentStateID": -2,
+        "lastStateID": -2,
+        "timeSec": 0.0,
+        "name": "Grave Digger Pale Ale v3"
+    },
+
+    "states":
+    [
+        {
+            "type": "Zobjects.States.StartPage.StartPage",
+            "id": 0,
+            "targetTemperature": 25,                        
+            "messageWeb": "9% heavy ale.  Single ferment and hard hitting.\nBased on a recipe from Crom, lost to time."
+        },
+        {
+            "type": "Zobjects.States.Precondition.Precondition",
+            "id": 1,
+            "targetTemperature": 25,
+            "messageWeb": "Add Initial water"
+        },
+        {
+            "type": "Zobjects.States.WaitForInput.WaitForInput",
+            "id": 2,
+            "targetTemperature": 25,
+            "messageWeb": "Add Initial water"
+        },
+        {
+            "type": "Zobjects.States.RaiseTemperatureTo.RaiseTemperatureTo",
+            "id": 3,
+            "targetTemperature": 30,
+            "heatType": "Full",
+            "messageWeb": "Raising temp for stuff"
+        }, 
+        {
+            "type": "Zobjects.States.Dummy.Dummy",
+            "id": 4,
+            "targetTemperature": 31            
+        }, 
+        {
+            "type": "Zobjects.States.Hold.Hold",
+            "id": 5,
+            "targetTemperature": 45,
+            "heatType": "Auto",            
+            "holdTimeSec": 6000,
+            "messageWeb": "Now we wait"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "data":
+    {
+        "currentStateID": -2,
+        "lastStateID": -2,
+        "timeSec": 0.0,
+        "name": "test - Wait for Input"
+    },
+
+    "states":
+    [
+        {
+            "type": "Zobjects.States.WaitForInput.WaitForInput",
+            "id": 0,
+            "targetTemperature": 25
+        }
+    ]
+}

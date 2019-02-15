@@ -1,0 +1,92 @@
+:root 
+{
+    --col_0: #000000;
+    --col_1: #002200;
+    --col_2: #003300;
+    --col_3: #005500;
+    --col_4: #007700;
+    --col_5: #009900;
+    --col_6: #00AA00;
+    --col_7: #00CC00;
+    --col_8: #00FF00;    
+}
+
+body
+{
+    background-color: var(--col_0);
+    color: var(--col_5);
+    margin: 15px;
+}
+
+.title
+{
+    font-size: 200%;
+    text-align: center;
+    color: var(--col_8);
+}
+
+div
+{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.message
+{
+    font-size: 100%;
+    text-align: center;
+    color: var(--col_5);
+}
+
+.proceed
+{
+    font-size: 120%;
+    text-align: center;
+    color: var(--col_8);
+}
+
+.temperature
+{
+    font-size: 125%;    
+    width: 100%;
+    text-align: center;
+    background-color: var(--col_1);
+    border-collapse: collapse;            
+}
+
+.temperature td, th
+{
+    border: 1px solid  var(--col_0);
+    border-collapse: collapse;
+}
+
+.temperature th
+{
+      color: var(--col_7);
+}
+
+.coredata
+{        
+    width: 100%;
+    text-align: center;
+    background-color: var(--col_1);
+    border-collapse: collapse;            
+}
+
+.coredata td, th
+{
+    border: 1px solid  var(--col_0);
+    border-collapse: collapse;
+}
+
+.coredata th
+{
+    width: 33%;
+    color: var(--col_7);
+}
+
+.buttondecks 
+{
+    width: 100%;
+    border-spacing: 10px;
+}

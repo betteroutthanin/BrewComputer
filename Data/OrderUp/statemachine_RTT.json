@@ -1,0 +1,18 @@
+{
+    "data":
+    {
+        "currentStateID": -2,
+        "lastStateID": -2,
+        "timeSec": 0.0,
+        "name": "test - RaiseTemperatureTo"
+    },
+
+    "states":
+    [
+        {
+            "type": "Zobjects.States.RaiseTemperatureTo.RaiseTemperatureTo",
+            "id": 0,
+            "targetTemperature": 25
+        }
+    ]
+}

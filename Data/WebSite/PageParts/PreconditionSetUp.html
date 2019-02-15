@@ -1,0 +1,43 @@
+<script type="text/javascript">
+	setTimeout ( "doSomething()", 100 );
+
+	function doSomething ( )
+	{
+		// (do something here)
+		RequestStatus('Ajax_Precondition.pax');		
+		setTimeout ( "doSomething()", 100 );
+	}	
+</script>		
+			
+<div style="height:400px" id="page_wrapper">			
+	Getting data, please wait  . . 	
+</div>
+
+<div id="errorstatus" >				
+</div>
+
+<div id="audio_wrapper" >						
+</div>
+
+    <table class='buttondecks'>
+        <tr>
+            <td align=left><button type="button" onclick="WebButton('pc_incMinST')">+ Start Time<br>Minutes</button></td>
+            <td align=right><button type="button" onclick="WebButton('pc_decMinST')">- Start Time<br>Minutes</button></td>
+        </tr>
+	
+        <tr>
+            <td align=left><button type="button" onclick="WebButton('pc_incHourST')">+ Start Time<br>Hour</button></td>
+            <td align=right><button type="button" onclick="WebButton('pc_decHourST')">- Start Time<br>Hour</button></td>
+        </tr>
+
+        <tr>
+            <td align=left><button type="button" onclick="WebButton('pc_incLT')">+ Lead Time</button></td>
+            <td align=right><button type="button" onclick="WebButton('pc_decLT')">- Lead Time</button></td>
+        </tr>
+
+        <tr>
+            <td align=left><button type="button" onclick="WebButton('pc_setConfig')">Set Config</button></td>
+            <td align=right></td>
+        </tr>
+    </table>
+

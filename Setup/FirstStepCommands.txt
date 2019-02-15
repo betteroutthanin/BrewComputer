@@ -1,0 +1,7 @@
+sudo apt-get update
+sudo apt-get install subversion
+svn checkout https://darkbutter.svn.cloudforge.com/codeprojects/BrewComputer2.0 BrewComputer2
+
+cd /home/pi/BrewComputer2/Setup/
+chmod +x runme.sh
+./runme.sh

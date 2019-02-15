@@ -1,0 +1,20 @@
+
+******************** SSH connections
+VirtualBox will create a private network (10.0.2.x) which will be connected to
+your host network using NAT. (Unless configured otherwise.) This means that 
+you cannot directly access any host of the private network from the host 
+network. To do so, you need some port forwarding. In the network preferences 
+of your VM you can, for example, configure VirtualBox to open port 22 on 
+127.0.1.1 (a loopback address of your host) and forward any traffic to port 22
+of 10.0.2.1 (the internal address of your VM)
+
+This way, you can point putty to Port 22 of 127.0.1.1 and VirtualBox will 
+redirect this connection to your VM where its ssh daemon will answer it, 
+allowing you to log in.
+
+
+******************** SMB connections
+Not yet - doesn't seem to work
+
+******************** Code editor in linux
+bluefish - seems to be solid

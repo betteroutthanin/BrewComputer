@@ -1,0 +1,80 @@
+{
+    "states": [
+        {
+            "messageWeb": "9% heavy ale.  Single ferment and hard hitting.\nBased on a recipe from Crom, lost to time.",
+            "id": 0,
+            "startTimeSec": 2.002716064453125e-05,
+            "targetTemperature": 25,
+            "messageLCD": "LCD Message Missing",
+            "type": "Zobjects.States.StartPage.StartPage",
+            "heatType": "Off"
+        },
+        {
+            "messageWeb": "Add Initial water",
+            "leadTimeSec": 3600,
+            "setupComplete": true,
+            "id": 1,
+            "startTimeSec": 0.9067652225494385,
+            "targetTemperature": 25,
+            "messageLCD": "LCD Message Missing",
+            "type": "Zobjects.States.Precondition.Precondition",
+            "heatType": "Off",
+            "targetStartTS": 1529209800
+        },
+        {
+            "messageWeb": "Add Initial water",
+            "id": 2,
+            "startTimeSec": 3.0517265796661377,
+            "targetTemperature": 25,
+            "messageLCD": "LCD Message Missing",
+            "type": "Zobjects.States.WaitForInput.WaitForInput",
+            "heatType": "Off"
+        },
+        {
+            "messageWeb": "Raising temp for stuff",
+            "id": 3,
+            "startTimeSec": 4.894761085510254,
+            "targetTemperature": 30,
+            "messageLCD": "LCD Message Missing",
+            "type": "Zobjects.States.RaiseTemperatureTo.RaiseTemperatureTo",
+            "heatType": "Full"
+        },
+        {
+            "messageWeb": "Web Message Missing",
+            "id": 4,
+            "startTimeSec": 15.994949340820312,
+            "targetTemperature": 31,
+            "messageLCD": "LCD Message Missing",
+            "type": "Zobjects.States.Dummy.Dummy",
+            "heatType": "Off"
+        },
+        {
+            "messageWeb": "Now we wait",
+            "id": 5,
+            "startTimeSec": 16.028449296951294,
+            "targetTemperature": 45,
+            "messageLCD": "LCD Message Missing",
+            "type": "Zobjects.States.Hold.Hold",
+            "heatType": "Auto",
+            "holdTimeSec": 6000
+        },
+        {
+            "messageWeb": "The run is now complete\nEnjoy the clean up :)",
+            "id": 6,
+            "startTimeSec": 0.0,
+            "targetTemperature": 0.0,
+            "messageLCD": "",
+            "type": "Zobjects.States.End.End",
+            "heatType": "Off"
+        }
+    ],
+    "data": {
+        "name": "Grave Digger Pale Ale v3",
+        "targetTemperature": 45,
+        "currentStateID": 5,
+        "timeSec": 276.61305356025696,
+        "lastStateID": 5,
+        "recoveryCounter": 1,
+        "heatType": "Auto"
+    }
+}
